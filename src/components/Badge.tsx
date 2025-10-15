@@ -48,20 +48,20 @@ export const Badge = (props: Props) => {
             'background-color': props.badgeBackgroundColor ?? '#ffffff',
           }}
         >
-          {props.footer?.text ?? 'Powered by'}
+          {props.footer?.text ?? 'Powered by Oren AI'}
           <a
             ref={liteBadge}
-            href={props.footer?.companyLink ?? 'https://flowiseai.com'}
+            href={props.footer?.companyLink ?? 'https://orenaisolutions.com'}
             target="_blank"
             rel="noopener noreferrer"
             class="lite-badge"
             id="lite-badge"
             style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
           >
-            <span>&nbsp;{props.footer?.company ?? 'Flowise'}</span>
-          </a>
-        </span>
-      </Show>
+            <span>&gt; {props.footer?.company ?? 'Oren AI'}</span>&gt;
+          </a>&gt;
+        </span>&gt;
+      </Show>&gt;
       <Show when={props.footer?.showFooter === false}>
         <span
           class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]"
@@ -70,7 +70,7 @@ export const Badge = (props: Props) => {
             'background-color': props.badgeBackgroundColor ?? '#ffffff',
           }}
         />
-      </Show>
+      </Show>&gt;
     </>
   );
 };
